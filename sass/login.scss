@@ -1,0 +1,72 @@
+$system-color: #EBA89C; //粉色
+$match-color: #bababa; //粉灰
+$match-color-4: #f4f4f4; //淡粉灰
+$match-color-2: #94D4EB; //粉藍
+$match-color-5:#deeaee; //淡粉藍
+$match-color-3: #9B9B9B; //中灰
+$white-color: #fff; //白
+$title-font: 2rem;
+$hit-font: 1.2rem;
+$content-font: 1rem;
+$littele-font: .8rem;
+
+@mixin phone{
+	@media(max-width: 768px){
+	@content
+	}
+}
+
+.login{
+	padding: 40px 30px;
+	height: auto;
+	// background: #f0f0f0;
+	span{
+	font-size: $hit-font;
+	line-height: 33px;
+	letter-spacing: 5px;
+}	
+}
+
+.form-login{
+	padding: 20px 20px;
+	margin: 0 auto;
+	color: $match-color-3;
+	/*border: solid 1px #aaa;*/
+	text-align: left;
+	max-width: 350px;
+	background: $match-color-5;
+	/*box-shadow: 2px 2px 3px #ddd;*/
+	.form-login-text{
+	width: 330px;
+	height: 40px;
+	font-size: 20px;
+		@include phone(){
+		width: 100%;
+		height: 40px;
+		font-size: 20px;
+		}
+	}
+	h2{
+	font-size: $hit-font;
+	line-height: 32px;
+	margin-bottom: 20px;
+	letter-spacing: 5px;
+	border-bottom: 1px solid #979797;
+	max-width: 100%;
+	}
+}
+
+
+.btn-loginbtn{
+	font-size: $content-font;
+	 background-color: $match-color-2;
+	 padding: .5em 3em;
+     color: #fff;
+}
+
+.register-link a{
+	font-size: $content-font;
+    line-height: 33px;
+	color: $system-color;
+}
+

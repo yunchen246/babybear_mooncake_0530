@@ -1,0 +1,77 @@
+.register {
+  padding: 20px 20px;
+  height: auto; }
+  .register .main {
+    width: 25%;
+    padding: 20px 20px;
+    margin: 0 auto;
+    color: #666;
+    /*border: solid 1px #aaa;*/
+    text-align: left;
+    background: #f4f4f4;
+    /*box-shadow: 2px 2px 3px #ddd;*/
+    font-size: 1rem;
+    line-height: 30px; }
+    @media (max-width: 768px) {
+      .register .main {
+        width: 100%;
+        padding: 0px; } }
+  .register h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: solid 1px #9B9B9B; }
+  .register a {
+    color: #94D4EB; }
+
+.form-aligned {
+  padding: 10px;
+  color: #666;
+  /*border: solid 1px #aaa;*/ }
+  .form-aligned .form-login-text {
+    height: 30px;
+    font-size: 20px;
+    margin-left: 0px; }
+
+.pure-form-aligned .pure-control-group label {
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+  width: 5em;
+  margin: 0 1em 0 0;
+  /*border: solid 1px #555;*/ }
+  @media (max-width: 768px) {
+    .pure-form-aligned .pure-control-group label {
+      text-align: left; } }
+
+.pure-form-aligned .pure-controls {
+  margin: 1.5em 0 0 11em; }
+
+.pure-form-aligned .pure-controls {
+  margin: 0em 0 0 0em; }
+  @media (max-width: 768px) {
+    .pure-form-aligned .pure-controls {
+      margin: 0em 0 0 0;
+      margin-left: 0px; } }
+
+.pure-form-aligned .pure-controls {
+  margin: 0em 0 0 0;
+  margin-left: 110px; }
+  @media (max-width: 768px) {
+    .pure-form-aligned .pure-controls {
+      margin-left: 0px; } }
+
+.pure-checkbox {
+  margin: 0em 0; }
+
+.btn-register {
+  font-size: 1rem;
+  background-color: #94D4EB;
+  padding: .5em 3em;
+  color: #fff; }
+
+.checknumber {
+  margin-left: 110px; }
+  @media (max-width: 768px) {
+    .checknumber {
+      margin-left: 0px; } }

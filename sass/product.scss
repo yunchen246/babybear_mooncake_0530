@@ -1,0 +1,248 @@
+$system-color: #EBA89C; //粉色
+$match-color: #bababa; //粉灰
+$match-color-4: #f4f4f4; //淡粉灰
+$match-color-2: #94D4EB; //粉藍
+$match-color-5:#deeaee; //淡粉藍
+$match-color-3: #9B9B9B; //中灰
+$white-color: #fff; //白
+$title-font: 2rem;
+$hit-font: 1.2rem;
+$content-font: 1rem;
+$littele-font: .8rem;
+
+@mixin phone{
+	@media(max-width: 768px){
+	@content
+	}
+}
+
+main{
+	margin: 0 auto;
+	max-width: 1280px;
+}
+
+.reservation{
+	padding: 20px 20px;
+	height: auto;
+	.reservation-kind{
+	float: left;
+	margin-right: 20px;
+	width: 20%;
+	  @include phone(){
+	  	float: none;
+	  	width: 100%;
+	  }
+	h2{
+	font-size: 1.5rem;;
+	color: $match-color-2;
+    line-height: 1.5em;
+    text-align: left;
+	margin-bottom: 1em;
+	}
+	}
+
+.reservation-main{
+	float: right;
+	// border: solid 1px red;
+	width: 78%;	
+	@include phone(){
+	  	float: none;
+	  	width: 100%;
+	  	margin-bottom: 20px;
+	  }	
+}
+}
+
+
+
+
+.reservation-kind .fa-utensils{
+	font-size: 30px;
+	margin-right: 10px;
+}
+
+.kind li a{
+	display: block;
+	color: #666;
+	text-align: left;
+	padding: 10px 5px;
+	border-bottom: 1px solid #666;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+
+.kind li a:hover{
+	color: $match-color-2;
+	font-weight: 600;
+}
+
+
+.kind-all-open{
+	display: none;
+	li{
+	display: block;
+	color: $match-color-3;
+	text-align: left;
+	padding: 10px 5px;
+	border-bottom: 1px solid #666;
+	text-decoration: none;
+	font-size: $content-font;
+	line-height: 20px;
+}
+}
+
+
+.kind-sale-open{
+	display: none;
+	li{
+	display: block;
+	color: $match-color-3;
+	text-align: left;
+	padding: 10px 5px;
+	border-bottom: 1px solid #666;
+	text-decoration: none;
+	font-size: $content-font;
+	line-height: 20px;
+}
+}
+
+.kind-mon-open{
+	display: none;
+	li{
+	display: block;
+	color: $match-color-3;
+	text-align: left;
+	padding: 10px 5px;
+	border-bottom: 1px solid #666;
+	text-decoration: none;
+	font-size: $content-font;
+	line-height: 20px;
+}
+}
+
+.kind-baby-open{
+	display: none;
+	li{
+	display: block;
+	color: $match-color-3;
+	text-align: left;
+	padding: 10px 5px;
+	border-bottom: 1px solid #666;
+	text-decoration: none;
+	font-size: $content-font;
+	line-height: 20px;
+}
+}
+
+.cake-bar{
+	margin-bottom: 20px;
+	margin-top: 10px;
+	/*border: 1px solid #666;*/
+	@include phone(){
+	margin-top: 40px;	
+	}
+	li{
+	float: left;
+	}
+	li:nth-child(1){
+	// margin-right: 5px;
+	}
+	li:nth-child(2){
+	width: 40%;	
+	}
+}
+
+
+.cake-search-box{
+	height: 32px;
+	padding: 5px;
+	border: solid 1px #bababa; //粉藍
+	// background: #f9ece2;
+	color: #bababa; //粉藍
+	box-sizing: border-box;
+	//margin-top: 2px;
+}
+
+.cake-check{
+	height: 32px;
+	font-size: 18px;
+	letter-spacing: 1px;
+	line-height: 32px;
+    text-align: right;
+    /*border: solid 1px red;*/
+    color: #fff; 
+    background-color: #bababa; //粉藍
+    padding-left: 4px;
+	padding-right: 4px;
+
+    .fa-clipboard-check{
+	font-size: 20px;
+	line-height: 32px;
+	margin-right: 5px;
+	margin-left: 10px;
+}
+}
+
+.cake-menu{
+    height: auto;
+    /*border: solid 1px red;*/
+    li{
+	text-align: center;
+	display: block;
+	float: left;
+	width: 30%;
+    height: auto;
+    // border: solid 1px #aaa;
+    box-sizing: border-box;
+    // background: #f2eae0;
+    margin-right: 5%;
+    margin-bottom: 2.5rem;
+    padding-bottom: 10px;
+		@include phone(){
+	  	width: 100%;
+	  	}
+	img{
+		border-radius: 20px;
+		max-width: 100%;
+    	margin-bottom: 20px;
+	}
+	}
+	li:nth-child(3) {
+	 margin-right: 0px;
+	}
+	li:nth-child(6) {
+	 margin-right: 0px;
+	}
+	li:nth-child(9) {
+	 margin-right: 0px;
+	}
+	h4{
+	margin-bottom: 5px;
+	font-size: $hit-font;
+	color: $match-color-3;
+	margin-bottom: 10px;
+	}
+
+	hr{
+		width: 80%;
+		height: 1px;
+		border:none;
+		border-top:1px solid #666;
+	}
+
+	h3{
+		margin-bottom: 10px;
+		font-weight: 700;
+		font-size: $hit-font;
+		color: $system-color;
+	}
+
+}
+
+
+
+
+
+

@@ -1,0 +1,213 @@
+$system-color: #EBA89C; //粉色
+$match-color: #bababa; //粉灰
+$match-color-4: #f4f4f4; //淡粉灰
+$match-color-2: #94D4EB; //粉藍
+$match-color-5:#deeaee; //淡粉藍
+$match-color-3: #9B9B9B; //中灰
+$white-color: #fff; //白
+$title-font: 2rem;
+$hit-font: 1.2rem;
+$content-font: 1rem;
+$littele-font: .8rem;
+
+@mixin phone{
+	@media(max-width: 768px){
+	@content
+	}
+}
+
+body{
+      font-family:  'Noto Sans TC', ‘cwTeXMing’, 'sans-serif', 
+     "Microsoft JhengHei";
+      }
+
+a{
+	text-decoration: none;
+}
+
+/*設定rem=16*/
+html {
+font-size: 16px;
+}
+
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#gototop{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 100;
+	cursor: pointer;
+}
+
+.top{
+	padding: 15px 20px;
+	border-radius: 50%;
+	text-align: center;
+	color: #fff;
+	background: $match-color;
+	i{
+	font-size: $hit-font;
+	font-weight: 300;
+	}
+}
+
+.top:hover{
+	color: #bbb;
+	background: #fff;
+}
+
+#wrap{
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+
+/*nav*/
+
+nav{
+	background-color: #faf9f9;
+	position: relative;
+	padding: 10px 30px;
+	box-shadow: 0px 3px 6px #DBDBDB;
+	z-index: 2;
+
+
+}
+
+#nav-box{
+	margin: 0 auto;
+	max-width: 1280px;
+	padding: 0px 30px;
+	@include phone(){
+  	padding: 0px;
+  }
+
+.menu{
+	float: right; 
+	margin-top: 20px;
+	@include phone(){
+	float: none;
+    /*隱藏選單開始*/
+    max-height: 0px;
+    overflow: hidden;
+    /*隱藏選單結束*/
+    transition: max-height 2.3s;
+    /*絕對定位疊在網頁上*/
+    position: absolute;
+    z-index: 100;
+    /*header 80px+1px boder 線條*/
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #faf9f9;
+    text-align: center;
+    border: none;
+	}
+	.icon{
+	margin-right: 4px;
+	margin-bottom: -4px;
+	}
+	.img{
+	float: left;
+	}
+	li:nth-child(1){
+	@include phone(){
+	border-top: solid 1px $match-color-3;
+	}	
+	}
+	li{
+	float: left;
+	@include phone(){
+	float: none;
+	border-bottom: solid 1px $match-color-3;
+	}
+	a{
+	font-size: $hit-font;
+	// line-height: 1.6rem;
+	line-height: 30px;
+	//font-weight: 600;
+	color: $match-color-3;
+	letter-spacing: 4px;
+	margin-left: 30px;
+	@include phone(){
+	line-height: 60px;
+	padding-left: 15px; 
+	margin:  0 auto;
+	border: none;
+	transition: all 0.3s;
+	}
+	}
+	a:hover{
+	color: $system-color;
+	}
+	}
+}
+	.logo{
+		float: left;
+		a{
+			background: url(../images/logo.png);
+			background-repeat: no-repeat;
+			display: block;
+			width: 200px;
+			height: 57px;
+			text-indent: 110%;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+	}
+}
+
+
+
+main{
+	padding: 30px 0px;
+}
+
+
+footer{
+	padding: 5px 10px;
+}
+
+
+#footer-bg{
+	/*background-color: #ededed;
+	border: solid 1px red;*/
+}
+
+#copyright-bg{
+	margin: 0 auto;
+	font-size: $littele-font;
+	text-align: center;
+	color: $match-color;
+	line-height: 2rem;
+}
+
+
+//隱藏漢堡
+.showmenu{
+		display: none;
+		@include phone(){
+		display: block;	
+	    float: right;
+	    background: url(../images/menu.png);
+      	background-repeat: no-repeat;
+      	width: 50px;
+      	height: 50px;
+  		}
+}
+
+
+.menu-show {
+	.menu{
+	max-height: 800px;		
+	}
+}
+
+
+
+

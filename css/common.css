@@ -1,0 +1,153 @@
+@charset "UTF-8";
+body {
+  font-family: 'Noto Sans TC', ‘cwTeXMing’, 'sans-serif',  "Microsoft JhengHei"; }
+
+a {
+  text-decoration: none; }
+
+/*設定rem=16*/
+html {
+  font-size: 16px; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+#gototop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  cursor: pointer; }
+
+.top {
+  padding: 15px 20px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  background: #bababa; }
+  .top i {
+    font-size: 1.2rem;
+    font-weight: 300; }
+
+.top:hover {
+  color: #bbb;
+  background: #fff; }
+
+#wrap {
+  max-width: 1280px;
+  margin: 0 auto; }
+
+/*nav*/
+nav {
+  background-color: #faf9f9;
+  position: relative;
+  padding: 10px 30px;
+  -webkit-box-shadow: 0px 3px 6px #DBDBDB;
+  box-shadow: 0px 3px 6px #DBDBDB;
+  z-index: 2; }
+
+#nav-box {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0px 30px; }
+  @media (max-width: 768px) {
+    #nav-box {
+      padding: 0px; } }
+  #nav-box .menu {
+    float: right;
+    margin-top: 20px; }
+    @media (max-width: 768px) {
+      #nav-box .menu {
+        float: none;
+        /*隱藏選單開始*/
+        max-height: 0px;
+        overflow: hidden;
+        /*隱藏選單結束*/
+        -webkit-transition: max-height 2.3s;
+        -o-transition: max-height 2.3s;
+        transition: max-height 2.3s;
+        /*絕對定位疊在網頁上*/
+        position: absolute;
+        z-index: 100;
+        /*header 80px+1px boder 線條*/
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #faf9f9;
+        text-align: center;
+        border: none; } }
+    #nav-box .menu .icon {
+      margin-right: 4px;
+      margin-bottom: -4px; }
+    #nav-box .menu .img {
+      float: left; }
+    @media (max-width: 768px) {
+      #nav-box .menu li:nth-child(1) {
+        border-top: solid 1px #9B9B9B; } }
+    #nav-box .menu li {
+      float: left; }
+      @media (max-width: 768px) {
+        #nav-box .menu li {
+          float: none;
+          border-bottom: solid 1px #9B9B9B; } }
+      #nav-box .menu li a {
+        font-size: 1.2rem;
+        line-height: 30px;
+        color: #9B9B9B;
+        letter-spacing: 4px;
+        margin-left: 30px; }
+        @media (max-width: 768px) {
+          #nav-box .menu li a {
+            line-height: 60px;
+            padding-left: 15px;
+            margin: 0 auto;
+            border: none;
+            -webkit-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s; } }
+      #nav-box .menu li a:hover {
+        color: #EBA89C; }
+  #nav-box .logo {
+    float: left; }
+    #nav-box .logo a {
+      background: url(../images/logo.png);
+      background-repeat: no-repeat;
+      display: block;
+      width: 200px;
+      height: 57px;
+      text-indent: 110%;
+      white-space: nowrap;
+      overflow: hidden; }
+
+main {
+  padding: 30px 0px; }
+
+footer {
+  padding: 5px 10px; }
+
+#footer-bg {
+  /*background-color: #ededed;
+	border: solid 1px red;*/ }
+
+#copyright-bg {
+  margin: 0 auto;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #bababa;
+  line-height: 2rem; }
+
+.showmenu {
+  display: none; }
+  @media (max-width: 768px) {
+    .showmenu {
+      display: block;
+      float: right;
+      background: url(../images/menu.png);
+      background-repeat: no-repeat;
+      width: 50px;
+      height: 50px; } }
+
+.menu-show .menu {
+  max-height: 800px; }

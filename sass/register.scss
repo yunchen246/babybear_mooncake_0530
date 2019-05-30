@@ -1,0 +1,113 @@
+$system-color: #EBA89C; //粉色
+$match-color: #bababa; //粉灰
+$match-color-4: #f4f4f4; //淡粉灰
+$match-color-2: #94D4EB; //粉藍
+$match-color-5:#deeaee; //淡粉藍
+$match-color-3: #9B9B9B; //中灰
+$white-color: #fff; //白
+$title-font: 2rem;
+$hit-font: 1.2rem;
+$content-font: 1rem;
+$littele-font: .8rem;
+
+@mixin phone{
+	@media(max-width: 768px){
+	@content
+	}
+}
+
+.register{
+	padding: 20px 20px;
+	height: auto;
+
+	.main{
+	width: 25%;
+	padding: 20px 20px;
+	margin: 0 auto;
+	color: #666;
+	/*border: solid 1px #aaa;*/
+	text-align: left;
+	background: $match-color-4;
+	/*box-shadow: 2px 2px 3px #ddd;*/
+	font-size: $content-font;
+	line-height: 30px;
+	@include phone(){
+	width: 100%;
+    padding: 0px;	
+	}
+	}
+	h3{
+		margin-bottom: 20px;
+		font-size: 20px;
+		line-height: 30px;
+		border-bottom: solid 1px #9B9B9B;
+	}
+	a{
+		color: $match-color-2;
+	}
+
+}
+
+
+.form-aligned{
+	padding: 10px;
+	color: #666;
+	/*border: solid 1px #aaa;*/
+	.form-login-text {
+    height: 30px;
+    font-size: 20px;
+    margin-left: 0px;
+}
+}
+
+
+.pure-form-aligned .pure-control-group label {
+    text-align: right;
+    display: inline-block;
+    vertical-align: middle;
+    width: 5em;
+    margin: 0 1em 0 0;
+    /*border: solid 1px #555;*/
+    @include phone(){
+    text-align: left;	
+    }
+}
+
+.pure-form-aligned .pure-controls {
+    margin: 1.5em 0 0 11em;
+}
+
+.pure-form-aligned .pure-controls {
+    margin: 0em 0 0 0em;
+    @include phone(){
+    margin: 0em 0 0 0;
+    margin-left: 0px;
+    }
+}
+
+.pure-form-aligned .pure-controls {
+    margin: 0em 0 0 0;
+    margin-left: 110px;
+	@include phone(){
+	margin-left: 0px;	
+	}
+}
+
+.pure-checkbox{
+	 margin: 0em 0;
+}
+
+.btn-register{
+	font-size: $content-font;
+	background-color: $match-color-2;
+	padding: .5em 3em;
+    color: #fff;
+}
+
+.checknumber{
+	margin-left: 110px;
+	@include phone(){
+    margin-left: 0px;
+    }
+}
+

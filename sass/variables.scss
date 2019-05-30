@@ -1,0 +1,18 @@
+$system-color: #EBA89C; //粉色
+$system-color-2: #e98d7c; //深粉色
+$match-color: #bababa; //粉灰
+$match-color-4: #f4f4f4; //淡粉灰
+$match-color-2: #94D4EB; //粉藍
+$match-color-5:#deeaee; //淡粉藍
+$match-color-3: #9B9B9B; //中灰
+$white-color: #fff; //白
+$title-font: 2rem;
+$hit-font: 1.2rem;
+$content-font: 1rem;
+$littele-font: .8rem;
+
+@mixin phone{
+	@media(max-width: 768px){
+	@content
+	}
+}

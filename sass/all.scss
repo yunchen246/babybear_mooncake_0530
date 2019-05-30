@@ -1,0 +1,16 @@
+
+//匯入全部的scss
+
+//通用scss
+@import 'reset';
+@import 'buttons';
+@import 'forms';
+@import 'variables';
+@import 'common';
+
+//分頁scss
+@import 'index';
+@import 'abouts';
+@import 'login';
+@import 'register';
+@import 'product';
