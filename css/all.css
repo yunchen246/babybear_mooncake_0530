@@ -497,7 +497,8 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     padding: 0.2em 0 0.8em; } }
 
 body {
-  font-family: 'Noto Sans TC', ‘cwTeXMing’, 'sans-serif',  "Microsoft JhengHei"; }
+  font-family: 'Noto Sans TC', ‘cwTeXMing’, 'sans-serif', 
+ "Microsoft JhengHei"; }
 
 a {
   text-decoration: none; }
@@ -545,18 +546,18 @@ nav {
   box-shadow: 0px 3px 6px #DBDBDB;
   z-index: 2; }
 
-#nav-box {
+.nav-box {
   margin: 0 auto;
   max-width: 1280px;
   padding: 0px 30px; }
   @media (max-width: 768px) {
-    #nav-box {
+    .nav-box {
       padding: 0px; } }
-  #nav-box .menu {
+  .nav-box .menu {
     float: right;
     margin-top: 20px; }
     @media (max-width: 768px) {
-      #nav-box .menu {
+      .nav-box .menu {
         float: none;
         /*隱藏選單開始*/
         max-height: 0px;
@@ -569,34 +570,34 @@ nav {
         position: absolute;
         z-index: 100;
         /*header 80px+1px boder 線條*/
-        top: 60px;
+        top: 55px;
         left: 0;
         right: 0;
         background-color: #faf9f9;
         text-align: center;
         border: none; } }
-    #nav-box .menu .icon {
+    .nav-box .menu .icon {
       margin-right: 4px;
       margin-bottom: -4px; }
-    #nav-box .menu .img {
+    .nav-box .menu .img {
       float: left; }
     @media (max-width: 768px) {
-      #nav-box .menu li:nth-child(1) {
+      .nav-box .menu li:nth-child(1) {
         border-top: solid 1px #9B9B9B; } }
-    #nav-box .menu li {
+    .nav-box .menu li {
       float: left; }
       @media (max-width: 768px) {
-        #nav-box .menu li {
+        .nav-box .menu li {
           float: none;
           border-bottom: solid 1px #9B9B9B; } }
-      #nav-box .menu li a {
+      .nav-box .menu li a {
         font-size: 1.2rem;
         line-height: 30px;
         color: #9B9B9B;
         letter-spacing: 4px;
         margin-left: 30px; }
         @media (max-width: 768px) {
-          #nav-box .menu li a {
+          .nav-box .menu li a {
             line-height: 60px;
             padding-left: 15px;
             margin: 0 auto;
@@ -604,11 +605,11 @@ nav {
             -webkit-transition: all 0.3s;
             -o-transition: all 0.3s;
             transition: all 0.3s; } }
-      #nav-box .menu li a:hover {
+      .nav-box .menu li a:hover {
         color: #EBA89C; }
-  #nav-box .logo {
+  .nav-box .logo {
     float: left; }
-    #nav-box .logo a {
+    .nav-box .logo a {
       background: url(../images/logo.png);
       background-repeat: no-repeat;
       display: block;

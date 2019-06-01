@@ -79,7 +79,7 @@ nav{
 
 }
 
-#nav-box{
+.nav-box{
 	margin: 0 auto;
 	max-width: 1280px;
 	padding: 0px 30px;
@@ -101,7 +101,7 @@ nav{
     position: absolute;
     z-index: 100;
     /*header 80px+1px boder 線條*/
-    top: 60px;
+    top: 55px;
     left: 0;
     right: 0;
     background-color: #faf9f9;
@@ -127,6 +127,7 @@ nav{
 	border-bottom: solid 1px $match-color-3;
 	}
 	a{
+	display: block;
 	font-size: $hit-font;
 	// line-height: 1.6rem;
 	line-height: 30px;

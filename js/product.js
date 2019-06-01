@@ -1,9 +1,6 @@
 
 $(document).ready(function() {
-   $('.showmenu').on('click',  function(e){
-      e.preventDefault();
-      $('body').toggleClass('menu-show');
-  });
+
 
    $('.kind-all-btn').on('click', function(event) {
    	event.preventDefault();
